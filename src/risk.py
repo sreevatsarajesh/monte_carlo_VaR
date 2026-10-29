@@ -9,7 +9,6 @@ def calculate_var(pnl, confidence_level=0.95):
     return max(0.0, float(np.quantile(losses, confidence_level)))
 def calculate_expected_shortfall(pnl, confidence_level=0.95):
     pnl = np.asarray(pnl, dtype=float)
-
     if pnl.size == 0:
         raise ValueError("P&L array cannot be empty.")
 
