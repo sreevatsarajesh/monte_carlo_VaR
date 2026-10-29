@@ -1,7 +1,4 @@
-
 import numpy as np
-
-
 def calculate_var(pnl, confidence_level=0.95):
     pnl = np.asarray(pnl, dtype=float)
 
