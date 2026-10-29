@@ -7,4 +7,4 @@ from config import(
     RANDOM_SEED,
     TRADING_DAYS,
 )
-def simulate_as
+def simulate_ass
