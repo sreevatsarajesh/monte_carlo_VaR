@@ -7,4 +7,5 @@ from config import(
     RANDOM_SEED,
     TRADING_DAYS,
 )
-def simulate_asset
+def simulate_asset_returns():
+    
