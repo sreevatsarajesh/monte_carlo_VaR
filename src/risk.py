@@ -22,3 +22,5 @@ def calculate_expected_shortfall(pnl, confidence_level=0.95):
     return max(0.0, float(tail_losses.mean()))
 concentrated_returns = simulated_returns[:, 0]
 diversified_returns = portfolio_returns
+concentrated_pnl = calculate_portfolio_pnl(concentrated_returns)
+diversified_pnl = calculate_portfolio_pnl(diversified_returns)
