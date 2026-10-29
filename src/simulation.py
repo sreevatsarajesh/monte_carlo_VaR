@@ -9,4 +9,4 @@ from config import(
 )
 def simulate_asset_returns():
     rng = np.random.default_rng(RANDOM_SEED)
-    
+    annual_returns = np.asarray(ANNUAL_RETURNS,dtype=float)
