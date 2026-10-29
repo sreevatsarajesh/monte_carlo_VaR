@@ -26,3 +26,8 @@ concentrated_pnl = calculate_portfolio_pnl(concentrated_returns)
 diversified_pnl = calculate_portfolio_pnl(diversified_returns)
 concentrated_var = calculate_var(concentrated_pnl, 0.95)
 diversified_var = calculate_var(diversified_pnl, 0.95)
+print("\n--- Diversification Experiment ---")
+print(f"Asset A only — 95% VaR: ₹{concentrated_var:,.2f}")
+print(f"Diversified — 95% VaR: ₹{diversified_var:,.2f}")
+reduction = (concentrated_var - diversified_var) / concentrated_var * 100
+print(f"VaR reduction: {reduction:.2f}%")
