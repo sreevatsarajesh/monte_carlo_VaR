@@ -19,5 +19,5 @@ def simulate_asset_returns():
         mean=daily_means
         cov=covariance
         size=N_SIMULATIONS
-    
     )
+    return simulated_returns
