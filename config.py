@@ -11,5 +11,4 @@ CORRELATION_MATRIX = [
     [0.60, 1.00, 0.40],
     [0.30, 0.40, 1.00],
 ]
-
 CONFIDENCE_LEVELS = [0.95, 0.99]
