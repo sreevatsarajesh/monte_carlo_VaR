@@ -8,4 +8,5 @@ from config import(
     TRADING_DAYS,
 )
 def simulate_asset_returns():
+    rng = np.random.default_rng(RANDOM_SEED)
     
