@@ -20,3 +20,5 @@ def calculate_expected_shortfall(pnl, confidence_level=0.95):
     var = np.quantile(losses, confidence_level)
     tail_losses = losses[losses >= var]
     return max(0.0, float(tail_losses.mean()))
+concentrated_returns = simulated_returns[:, 0]
+diversified_returns = portfolio_returns
