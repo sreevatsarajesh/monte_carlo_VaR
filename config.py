@@ -6,7 +6,6 @@ ASSET_NAMES = ["Asset A", "Asset B", "Asset C"]
 WEIGHTS = [0.50, 0.30, 0.20]
 ANNUAL_RETURNS = [0.10, 0.08, 0.12]
 ANNUAL_VOLATILITIES = [0.20, 0.15, 0.25]
-
 CORRELATION_MATRIX = [
     [1.00, 0.60, 0.30],
     [0.60, 1.00, 0.40],
