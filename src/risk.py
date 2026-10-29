@@ -13,9 +13,7 @@ def calculate_expected_shortfall(pnl, confidence_level=0.95):
         raise ValueError("P&L array cannot be empty.")
     if not 0 < confidence_level < 1:
         raise ValueError("Confidence level must be between 0 and 1.")
-
     losses = -pnl
     var = np.quantile(losses, confidence_level)
     tail_losses = losses[losses >= var]
-
     return max(0.0, float(tail_losses.mean()))
