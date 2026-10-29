@@ -24,3 +24,5 @@ concentrated_returns = simulated_returns[:, 0]
 diversified_returns = portfolio_returns
 concentrated_pnl = calculate_portfolio_pnl(concentrated_returns)
 diversified_pnl = calculate_portfolio_pnl(diversified_returns)
+concentrated_var = calculate_var(concentrated_pnl, 0.95)
+diversified_var = calculate_var(diversified_pnl, 0.95)
