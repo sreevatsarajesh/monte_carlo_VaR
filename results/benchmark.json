@@ -1,0 +1,9 @@
+{
+  "simulation_count": 50000,
+  "runtime_seconds": 0.03690820804331452,
+  "mean_portfolio_return": 0.0004472058674642027,
+  "daily_volatility": 0.00998510414042341,
+  "var_95": 15977.768253637967,
+  "var_99": 22894.9005369778,
+  "seed": 42
+}
