@@ -1,0 +1,645 @@
+{
+  "benchmark": "Unified one-day, three-asset Monte Carlo showdown",
+  "engine": "normal_simple_returns",
+  "configuration": {
+    "initial_capital": 1000000.0,
+    "initial_prices": [
+      100.0,
+      120.0,
+      80.0
+    ],
+    "weights": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "annual_drift": [
+      0.1,
+      0.08,
+      0.12
+    ],
+    "annual_volatility": [
+      0.2,
+      0.15,
+      0.25
+    ],
+    "correlation": [
+      [
+        1.0,
+        0.6,
+        0.3
+      ],
+      [
+        0.6,
+        1.0,
+        0.4
+      ],
+      [
+        0.3,
+        0.4,
+        1.0
+      ]
+    ],
+    "trading_days": 252,
+    "horizon_years": 0.003968253968253968,
+    "steps": 1,
+    "confidence_levels": [
+      0.95,
+      0.99
+    ],
+    "seed": 42,
+    "warmup_runs": 1,
+    "measured_repeats": 7
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.5.4",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "processor": "arm"
+  },
+  "results": [
+    {
+      "simulation_count": 10000,
+      "repeats": 7,
+      "seed": 42,
+      "median_runtime_seconds": 0.0012568749953061342,
+      "median_simulations_per_second": 7956240.705993457,
+      "median_peak_traced_memory_mb": 0.7547264099121094,
+      "returned_array_bytes_mb": 0.2288818359375,
+      "median_mean_portfolio_return": 0.00030923152458488755,
+      "median_daily_volatility_sample": 0.009945324106502843,
+      "median_probability_of_loss": 0.487,
+      "median_var_95_currency": 16102.406988786746,
+      "median_es_95_currency": 20420.3890228681,
+      "median_var_99_currency": 23261.081413532927,
+      "median_es_99_currency": 26280.46303541487,
+      "run_details": [
+        {
+          "mean_portfolio_return": 0.00030923152458488755,
+          "daily_volatility_sample": 0.009945324106502843,
+          "probability_of_loss": 0.487,
+          "mean_pnl": 309.23152458488755,
+          "var_95_currency": 16102.406988786746,
+          "es_95_currency": 20420.3890228681,
+          "var_99_currency": 23261.081413532927,
+          "es_99_currency": 26280.46303541487,
+          "runtime_seconds": 0.0017487499862909317,
+          "simulations_per_second": 5718370.3093029475,
+          "peak_traced_memory_mb": 0.7547683715820312,
+          "returned_array_bytes_mb": 0.2288818359375,
+          "output_shape": [
+            10000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00030923152458488755,
+          "daily_volatility_sample": 0.009945324106502843,
+          "probability_of_loss": 0.487,
+          "mean_pnl": 309.23152458488755,
+          "var_95_currency": 16102.406988786746,
+          "es_95_currency": 20420.3890228681,
+          "var_99_currency": 23261.081413532927,
+          "es_99_currency": 26280.46303541487,
+          "runtime_seconds": 0.0012568749953061342,
+          "simulations_per_second": 7956240.705993457,
+          "peak_traced_memory_mb": 0.7547683715820312,
+          "returned_array_bytes_mb": 0.2288818359375,
+          "output_shape": [
+            10000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00030923152458488755,
+          "daily_volatility_sample": 0.009945324106502843,
+          "probability_of_loss": 0.487,
+          "mean_pnl": 309.23152458488755,
+          "var_95_currency": 16102.406988786746,
+          "es_95_currency": 20420.3890228681,
+          "var_99_currency": 23261.081413532927,
+          "es_99_currency": 26280.46303541487,
+          "runtime_seconds": 0.0012801249977201223,
+          "simulations_per_second": 7811737.1489579575,
+          "peak_traced_memory_mb": 0.7547683715820312,
+          "returned_array_bytes_mb": 0.2288818359375,
+          "output_shape": [
+            10000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00030923152458488755,
+          "daily_volatility_sample": 0.009945324106502843,
+          "probability_of_loss": 0.487,
+          "mean_pnl": 309.23152458488755,
+          "var_95_currency": 16102.406988786746,
+          "es_95_currency": 20420.3890228681,
+          "var_99_currency": 23261.081413532927,
+          "es_99_currency": 26280.46303541487,
+          "runtime_seconds": 0.0011897090007551014,
+          "simulations_per_second": 8405416.781459212,
+          "peak_traced_memory_mb": 0.7547264099121094,
+          "returned_array_bytes_mb": 0.2288818359375,
+          "output_shape": [
+            10000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00030923152458488755,
+          "daily_volatility_sample": 0.009945324106502843,
+          "probability_of_loss": 0.487,
+          "mean_pnl": 309.23152458488755,
+          "var_95_currency": 16102.406988786746,
+          "es_95_currency": 20420.3890228681,
+          "var_99_currency": 23261.081413532927,
+          "es_99_currency": 26280.46303541487,
+          "runtime_seconds": 0.0014343330403789878,
+          "simulations_per_second": 6971881.507629317,
+          "peak_traced_memory_mb": 0.7547264099121094,
+          "returned_array_bytes_mb": 0.2288818359375,
+          "output_shape": [
+            10000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00030923152458488755,
+          "daily_volatility_sample": 0.009945324106502843,
+          "probability_of_loss": 0.487,
+          "mean_pnl": 309.23152458488755,
+          "var_95_currency": 16102.406988786746,
+          "es_95_currency": 20420.3890228681,
+          "var_99_currency": 23261.081413532927,
+          "es_99_currency": 26280.46303541487,
+          "runtime_seconds": 0.0010669169714674354,
+          "simulations_per_second": 9372800.571581518,
+          "peak_traced_memory_mb": 0.7547264099121094,
+          "returned_array_bytes_mb": 0.2288818359375,
+          "output_shape": [
+            10000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00030923152458488755,
+          "daily_volatility_sample": 0.009945324106502843,
+          "probability_of_loss": 0.487,
+          "mean_pnl": 309.23152458488755,
+          "var_95_currency": 16102.406988786746,
+          "es_95_currency": 20420.3890228681,
+          "var_99_currency": 23261.081413532927,
+          "es_99_currency": 26280.46303541487,
+          "runtime_seconds": 0.0010069590061903,
+          "simulations_per_second": 9930890.86896766,
+          "peak_traced_memory_mb": 0.7547264099121094,
+          "returned_array_bytes_mb": 0.2288818359375,
+          "output_shape": [
+            10000,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "simulation_count": 50000,
+      "repeats": 7,
+      "seed": 42,
+      "median_runtime_seconds": 0.002913916017860174,
+      "median_simulations_per_second": 17159039.48279105,
+      "median_peak_traced_memory_mb": 3.5013084411621094,
+      "returned_array_bytes_mb": 1.1444091796875,
+      "median_mean_portfolio_return": 0.0004472058674642027,
+      "median_daily_volatility_sample": 0.00998510414042341,
+      "median_probability_of_loss": 0.48242,
+      "median_var_95_currency": 15977.768253637967,
+      "median_es_95_currency": 20278.23083973513,
+      "median_var_99_currency": 22894.9005369778,
+      "median_es_99_currency": 26468.223789309508,
+      "run_details": [
+        {
+          "mean_portfolio_return": 0.0004472058674642027,
+          "daily_volatility_sample": 0.00998510414042341,
+          "probability_of_loss": 0.48242,
+          "mean_pnl": 447.20586746420264,
+          "var_95_currency": 15977.768253637967,
+          "es_95_currency": 20278.23083973513,
+          "var_99_currency": 22894.9005369778,
+          "es_99_currency": 26468.223789309508,
+          "runtime_seconds": 0.003096124972216785,
+          "simulations_per_second": 16149218.926457176,
+          "peak_traced_memory_mb": 3.5013084411621094,
+          "returned_array_bytes_mb": 1.1444091796875,
+          "output_shape": [
+            50000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.0004472058674642027,
+          "daily_volatility_sample": 0.00998510414042341,
+          "probability_of_loss": 0.48242,
+          "mean_pnl": 447.20586746420264,
+          "var_95_currency": 15977.768253637967,
+          "es_95_currency": 20278.23083973513,
+          "var_99_currency": 22894.9005369778,
+          "es_99_currency": 26468.223789309508,
+          "runtime_seconds": 0.003526749962475151,
+          "simulations_per_second": 14177358.908911392,
+          "peak_traced_memory_mb": 3.5013084411621094,
+          "returned_array_bytes_mb": 1.1444091796875,
+          "output_shape": [
+            50000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.0004472058674642027,
+          "daily_volatility_sample": 0.00998510414042341,
+          "probability_of_loss": 0.48242,
+          "mean_pnl": 447.20586746420264,
+          "var_95_currency": 15977.768253637967,
+          "es_95_currency": 20278.23083973513,
+          "var_99_currency": 22894.9005369778,
+          "es_99_currency": 26468.223789309508,
+          "runtime_seconds": 0.0028844999615103006,
+          "simulations_per_second": 17334026.92569994,
+          "peak_traced_memory_mb": 3.5012664794921875,
+          "returned_array_bytes_mb": 1.1444091796875,
+          "output_shape": [
+            50000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.0004472058674642027,
+          "daily_volatility_sample": 0.00998510414042341,
+          "probability_of_loss": 0.48242,
+          "mean_pnl": 447.20586746420264,
+          "var_95_currency": 15977.768253637967,
+          "es_95_currency": 20278.23083973513,
+          "var_99_currency": 22894.9005369778,
+          "es_99_currency": 26468.223789309508,
+          "runtime_seconds": 0.002913916017860174,
+          "simulations_per_second": 17159039.48279105,
+          "peak_traced_memory_mb": 3.5013504028320312,
+          "returned_array_bytes_mb": 1.1444091796875,
+          "output_shape": [
+            50000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.0004472058674642027,
+          "daily_volatility_sample": 0.00998510414042341,
+          "probability_of_loss": 0.48242,
+          "mean_pnl": 447.20586746420264,
+          "var_95_currency": 15977.768253637967,
+          "es_95_currency": 20278.23083973513,
+          "var_99_currency": 22894.9005369778,
+          "es_99_currency": 26468.223789309508,
+          "runtime_seconds": 0.002684874983970076,
+          "simulations_per_second": 18622841.025568314,
+          "peak_traced_memory_mb": 3.5013084411621094,
+          "returned_array_bytes_mb": 1.1444091796875,
+          "output_shape": [
+            50000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.0004472058674642027,
+          "daily_volatility_sample": 0.00998510414042341,
+          "probability_of_loss": 0.48242,
+          "mean_pnl": 447.20586746420264,
+          "var_95_currency": 15977.768253637967,
+          "es_95_currency": 20278.23083973513,
+          "var_99_currency": 22894.9005369778,
+          "es_99_currency": 26468.223789309508,
+          "runtime_seconds": 0.0029411669820547104,
+          "simulations_per_second": 17000054.843900707,
+          "peak_traced_memory_mb": 3.5012664794921875,
+          "returned_array_bytes_mb": 1.1444091796875,
+          "output_shape": [
+            50000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.0004472058674642027,
+          "daily_volatility_sample": 0.00998510414042341,
+          "probability_of_loss": 0.48242,
+          "mean_pnl": 447.20586746420264,
+          "var_95_currency": 15977.768253637967,
+          "es_95_currency": 20278.23083973513,
+          "var_99_currency": 22894.9005369778,
+          "es_99_currency": 26468.223789309508,
+          "runtime_seconds": 0.0028006250504404306,
+          "simulations_per_second": 17853157.455739006,
+          "peak_traced_memory_mb": 3.5012245178222656,
+          "returned_array_bytes_mb": 1.1444091796875,
+          "output_shape": [
+            50000,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "simulation_count": 100000,
+      "repeats": 7,
+      "seed": 42,
+      "median_runtime_seconds": 0.005477458005771041,
+      "median_simulations_per_second": 18256643.847317524,
+      "median_peak_traced_memory_mb": 6.934452056884766,
+      "returned_array_bytes_mb": 2.288818359375,
+      "median_mean_portfolio_return": 0.00040062515664460575,
+      "median_daily_volatility_sample": 0.009936273300435694,
+      "median_probability_of_loss": 0.48493,
+      "median_var_95_currency": 15903.63418874865,
+      "median_es_95_currency": 20125.53811935595,
+      "median_var_99_currency": 22786.85906293456,
+      "median_es_99_currency": 26258.45696426191,
+      "run_details": [
+        {
+          "mean_portfolio_return": 0.00040062515664460575,
+          "daily_volatility_sample": 0.009936273300435694,
+          "probability_of_loss": 0.48493,
+          "mean_pnl": 400.6251566446057,
+          "var_95_currency": 15903.63418874865,
+          "es_95_currency": 20125.53811935595,
+          "var_99_currency": 22786.85906293456,
+          "es_99_currency": 26258.45696426191,
+          "runtime_seconds": 0.005518875026609749,
+          "simulations_per_second": 18119634.80199154,
+          "peak_traced_memory_mb": 6.934452056884766,
+          "returned_array_bytes_mb": 2.288818359375,
+          "output_shape": [
+            100000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040062515664460575,
+          "daily_volatility_sample": 0.009936273300435694,
+          "probability_of_loss": 0.48493,
+          "mean_pnl": 400.6251566446057,
+          "var_95_currency": 15903.63418874865,
+          "es_95_currency": 20125.53811935595,
+          "var_99_currency": 22786.85906293456,
+          "es_99_currency": 26258.45696426191,
+          "runtime_seconds": 0.005196457961574197,
+          "simulations_per_second": 19243877.414088875,
+          "peak_traced_memory_mb": 6.934452056884766,
+          "returned_array_bytes_mb": 2.288818359375,
+          "output_shape": [
+            100000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040062515664460575,
+          "daily_volatility_sample": 0.009936273300435694,
+          "probability_of_loss": 0.48493,
+          "mean_pnl": 400.6251566446057,
+          "var_95_currency": 15903.63418874865,
+          "es_95_currency": 20125.53811935595,
+          "var_99_currency": 22786.85906293456,
+          "es_99_currency": 26258.45696426191,
+          "runtime_seconds": 0.005381042021326721,
+          "simulations_per_second": 18583761.212729674,
+          "peak_traced_memory_mb": 6.934452056884766,
+          "returned_array_bytes_mb": 2.288818359375,
+          "output_shape": [
+            100000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040062515664460575,
+          "daily_volatility_sample": 0.009936273300435694,
+          "probability_of_loss": 0.48493,
+          "mean_pnl": 400.6251566446057,
+          "var_95_currency": 15903.63418874865,
+          "es_95_currency": 20125.53811935595,
+          "var_99_currency": 22786.85906293456,
+          "es_99_currency": 26258.45696426191,
+          "runtime_seconds": 0.006585291994269937,
+          "simulations_per_second": 15185355.499348098,
+          "peak_traced_memory_mb": 6.9344940185546875,
+          "returned_array_bytes_mb": 2.288818359375,
+          "output_shape": [
+            100000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040062515664460575,
+          "daily_volatility_sample": 0.009936273300435694,
+          "probability_of_loss": 0.48493,
+          "mean_pnl": 400.6251566446057,
+          "var_95_currency": 15903.63418874865,
+          "es_95_currency": 20125.53811935595,
+          "var_99_currency": 22786.85906293456,
+          "es_99_currency": 26258.45696426191,
+          "runtime_seconds": 0.005477458005771041,
+          "simulations_per_second": 18256643.847317524,
+          "peak_traced_memory_mb": 6.934452056884766,
+          "returned_array_bytes_mb": 2.288818359375,
+          "output_shape": [
+            100000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040062515664460575,
+          "daily_volatility_sample": 0.009936273300435694,
+          "probability_of_loss": 0.48493,
+          "mean_pnl": 400.6251566446057,
+          "var_95_currency": 15903.63418874865,
+          "es_95_currency": 20125.53811935595,
+          "var_99_currency": 22786.85906293456,
+          "es_99_currency": 26258.45696426191,
+          "runtime_seconds": 0.00555245898431167,
+          "simulations_per_second": 18010038.486109924,
+          "peak_traced_memory_mb": 6.934452056884766,
+          "returned_array_bytes_mb": 2.288818359375,
+          "output_shape": [
+            100000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040062515664460575,
+          "daily_volatility_sample": 0.009936273300435694,
+          "probability_of_loss": 0.48493,
+          "mean_pnl": 400.6251566446057,
+          "var_95_currency": 15903.63418874865,
+          "es_95_currency": 20125.53811935595,
+          "var_99_currency": 22786.85906293456,
+          "es_99_currency": 26258.45696426191,
+          "runtime_seconds": 0.004824417002964765,
+          "simulations_per_second": 20727893.119219724,
+          "peak_traced_memory_mb": 6.934452056884766,
+          "returned_array_bytes_mb": 2.288818359375,
+          "output_shape": [
+            100000,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "simulation_count": 250000,
+      "repeats": 7,
+      "seed": 42,
+      "median_runtime_seconds": 0.012348749965894967,
+      "median_simulations_per_second": 20244964.121101744,
+      "median_peak_traced_memory_mb": 17.234134674072266,
+      "returned_array_bytes_mb": 5.7220458984375,
+      "median_mean_portfolio_return": 0.00040129436766470793,
+      "median_daily_volatility_sample": 0.009916104169661844,
+      "median_probability_of_loss": 0.48444,
+      "median_var_95_currency": 15861.429824460869,
+      "median_es_95_currency": 20065.01022301346,
+      "median_var_99_currency": 22719.46918444937,
+      "median_es_99_currency": 26163.930144238468,
+      "run_details": [
+        {
+          "mean_portfolio_return": 0.00040129436766470793,
+          "daily_volatility_sample": 0.009916104169661844,
+          "probability_of_loss": 0.48444,
+          "mean_pnl": 401.2943676647079,
+          "var_95_currency": 15861.429824460869,
+          "es_95_currency": 20065.01022301346,
+          "var_99_currency": 22719.46918444937,
+          "es_99_currency": 26163.930144238468,
+          "runtime_seconds": 0.012165000021923333,
+          "simulations_per_second": 20550760.341098137,
+          "peak_traced_memory_mb": 17.234134674072266,
+          "returned_array_bytes_mb": 5.7220458984375,
+          "output_shape": [
+            250000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040129436766470793,
+          "daily_volatility_sample": 0.009916104169661844,
+          "probability_of_loss": 0.48444,
+          "mean_pnl": 401.2943676647079,
+          "var_95_currency": 15861.429824460869,
+          "es_95_currency": 20065.01022301346,
+          "var_99_currency": 22719.46918444937,
+          "es_99_currency": 26163.930144238468,
+          "runtime_seconds": 0.011843041982501745,
+          "simulations_per_second": 21109441.338583313,
+          "peak_traced_memory_mb": 17.234134674072266,
+          "returned_array_bytes_mb": 5.7220458984375,
+          "output_shape": [
+            250000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040129436766470793,
+          "daily_volatility_sample": 0.009916104169661844,
+          "probability_of_loss": 0.48444,
+          "mean_pnl": 401.2943676647079,
+          "var_95_currency": 15861.429824460869,
+          "es_95_currency": 20065.01022301346,
+          "var_99_currency": 22719.46918444937,
+          "es_99_currency": 26163.930144238468,
+          "runtime_seconds": 0.012778291013091803,
+          "simulations_per_second": 19564431.561612293,
+          "peak_traced_memory_mb": 17.234134674072266,
+          "returned_array_bytes_mb": 5.7220458984375,
+          "output_shape": [
+            250000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040129436766470793,
+          "daily_volatility_sample": 0.009916104169661844,
+          "probability_of_loss": 0.48444,
+          "mean_pnl": 401.2943676647079,
+          "var_95_currency": 15861.429824460869,
+          "es_95_currency": 20065.01022301346,
+          "var_99_currency": 22719.46918444937,
+          "es_99_currency": 26163.930144238468,
+          "runtime_seconds": 0.01272175001213327,
+          "simulations_per_second": 19651384.421291444,
+          "peak_traced_memory_mb": 17.234134674072266,
+          "returned_array_bytes_mb": 5.7220458984375,
+          "output_shape": [
+            250000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040129436766470793,
+          "daily_volatility_sample": 0.009916104169661844,
+          "probability_of_loss": 0.48444,
+          "mean_pnl": 401.2943676647079,
+          "var_95_currency": 15861.429824460869,
+          "es_95_currency": 20065.01022301346,
+          "var_99_currency": 22719.46918444937,
+          "es_99_currency": 26163.930144238468,
+          "runtime_seconds": 0.012348749965894967,
+          "simulations_per_second": 20244964.121101744,
+          "peak_traced_memory_mb": 17.234134674072266,
+          "returned_array_bytes_mb": 5.7220458984375,
+          "output_shape": [
+            250000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040129436766470793,
+          "daily_volatility_sample": 0.009916104169661844,
+          "probability_of_loss": 0.48444,
+          "mean_pnl": 401.2943676647079,
+          "var_95_currency": 15861.429824460869,
+          "es_95_currency": 20065.01022301346,
+          "var_99_currency": 22719.46918444937,
+          "es_99_currency": 26163.930144238468,
+          "runtime_seconds": 0.015284500026609749,
+          "simulations_per_second": 16356439.5017671,
+          "peak_traced_memory_mb": 17.234134674072266,
+          "returned_array_bytes_mb": 5.7220458984375,
+          "output_shape": [
+            250000,
+            3
+          ]
+        },
+        {
+          "mean_portfolio_return": 0.00040129436766470793,
+          "daily_volatility_sample": 0.009916104169661844,
+          "probability_of_loss": 0.48444,
+          "mean_pnl": 401.2943676647079,
+          "var_95_currency": 15861.429824460869,
+          "es_95_currency": 20065.01022301346,
+          "var_99_currency": 22719.46918444937,
+          "es_99_currency": 26163.930144238468,
+          "runtime_seconds": 0.012187207990791649,
+          "simulations_per_second": 20513312.006235864,
+          "peak_traced_memory_mb": 17.234134674072266,
+          "returned_array_bytes_mb": 5.7220458984375,
+          "output_shape": [
+            250000,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Normal simple-return and one-step GBM models are different distributions.",
+    "Risk metrics use common independent calculations and positive-loss convention.",
+    "Runtime includes simulation and portfolio-return construction.",
+    "tracemalloc reports traced allocations, not total process RSS.",
+    "Returned array sizes differ because the engines return different structures."
+  ]
+}
